@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{title} My Shop
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        header
+            #brand.flex
+                h2 My Shop
+            ul#nav.flex
+                li Registrarme
+                li Ingresar
+
+        #content
+            block content
+
+        footer
+            #about-us.footer-top-section
+                h3.footer-title Acerca de Nosotros
+                ul
+                    li
+                        a(href="") Misión y Visión
+                    li
+                        a(href="") Qué Hacemos
+                    li
+                        a(href="") Nuestra Historia
+                    li
+                        a(href="") Responsabilidad Social
+            #contact-us.footer-top-section
+                h3.footer-title.right Contáctanos
+                ul
+                    li.right
+                        a(href="") MyShop
+                    li.right
+                        a(href="") @MyShop
+                    li.right
+                        a(href="") @MyShop
+                    li.right
+                        a(href="") +593 99 999 9999
+                    li.right
+                        a(href="") hola@myshop.com
+                    li.right
+                        a(href="") Esmeraldas - Ecuador
+            p#copyright.small.secondaryText Todos los derechos reservados. 2019
+            p#brand.small.secondaryText.center My Shop®
+            ul#links.small.secondaryText.flex
+                li
+                    a Términos y Condiciones
+                li 
+                    a Política de Privacidad

@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+body,
+html{
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+/*HEADER*/
+header{
+    background: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+    color: rgb(69, 72, 230);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 50px;
+    padding: 5px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+#brand{
+    align-items: center;
+    height: 100%;
+}
+#brand h2{
+    display: block;
+}
+#nav{
+    align-items: center;
+    justify-content: flex-end;
+}
+#nav li{
+    cursor: pointer;
+    margin: 0px 10px;
+}
+#nav li:nth-child(1){
+    color: rgba(69, 72, 230, 0.75);
+}
+#nav li:nth-child(1):hover{
+    color: rgb(69, 72, 230);
+}
+#nav li:nth-child(2){
+    border: 1px solid rgb(69, 72, 230);
+    border-radius: 5px;
+    color: rgb(69, 72, 230);
+    padding: 5px 10px;
+}
+#nav li:nth-child(2):hover{
+    background: rgb(69, 72, 230);
+    color: #fff;
+    transition: .25s all linear;
+}
+/*CONTENT*/
+#content{
+    background: rgba(69, 72, 230, 0.05);
+    height: 100%;
+    padding-top: 50px; 
+}
+/*FOOTER*/
+footer{
+    border-top: 1px solid #ccc;
+    display: grid;
+    grid-template-areas: "about about  contact"
+                         "copyright brand links";
+    padding: 40px;      
+}
+footer a{
+    color: #999;
+}
+footer a:hover{
+    color: rgb(69, 72, 230);
+}
+#about-us{
+    grid-area: about;
+}
+#contact-us{
+    grid-area: contact;
+}
+#copyright{
+    grid-area: copyright;
+}
+#brands{
+    grid-area: brands;
+}
+#links{
+    grid-area: links;
+    justify-content: flex-end;
+}
+#links li{
+    margin: 0px 5px;
+}
+/*Classes*/
+.center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.footer-title{
+    color: #777;
+    margin-bottom: 20px;
+}
+.footer-top-section{
+    border-bottom: 1px solid #ccc;    
+    margin-bottom: 40px;
+    padding-bottom: 40px; 
+}
+.right{
+    text-align: right;
+}
+.secondaryText{
+    color: #999;
+}
+.small{
+    font-size: .75em;
+}
